@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "black", color: "white", textAlign: "center", padding: "10px", marginTop: "20px" }}>
+    <footer style={{ backgroundColor: "#333", color: "white", padding: "10px", textAlign: "center" }}>
       <p>&copy; 2025 Recipe Sharing App. All rights reserved.</p>
     </footer>
   );
