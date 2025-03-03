@@ -1,3 +1,15 @@
+import Counter from "./components/Counter";
+function App() {
+  return (
+    <div>
+      <h1>Recipe Sharing App</h1>
+      <Counter />
+    </div>
+  );
+}
+
+export default App;
+
 import React from 'react';
 import Header from './components/Header';
 import UserProfile from './components/UserProfile';
