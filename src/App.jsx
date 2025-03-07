@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -33,3 +34,19 @@ function App() {
 }
 
 export default App
+=======
+import RegistrationForm from "./components/RegistrationForm";
+import FormikForm from "./components/FormikForm";
+
+function App() {
+  return (
+    <div>
+      <h1>User Registration</h1>
+      <RegistrationForm />
+      <FormikForm />
+    </div>
+  );
+}
+
+export default App;
+ fe521ac (Added form handling with controlled components and Formik)
