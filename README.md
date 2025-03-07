@@ -13,3 +13,12 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in yourfe521ac (Added form handling with controlled components and Formik)
+Form Handling in React
+This project demonstrates form handling in React using both controlled components and Formik for efficient form state management and validation.
+
+Features:
+✅ User registration form using controlled components
+✅ Basic validation to prevent empty form submissions
+✅ Transition to Formik for easier form management
+✅ Yup integration for schema-based validation
+✅ Simulated API interaction for user registration
