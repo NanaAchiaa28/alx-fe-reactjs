@@ -1,24 +1,12 @@
-
-# My React App
-=======
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Form Handling in React
 
-Currently, two official plugins are available:
+This project demonstrates how to handle forms in React using controlled components and Formik.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Controlled form with `useState`
+- Validation for empty fields
+- Formik-based form with Yup validation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in yourfe521ac (Added form handling with controlled components and Formik)
-Form Handling in React
-This project demonstrates form handling in React using both controlled components and Formik for efficient form state management and validation.
-
-Features:
-✅ User registration form using controlled components
-✅ Basic validation to prevent empty form submissions
-✅ Transition to Formik for easier form management
-✅ Yup integration for schema-based validation
-✅ Simulated API interaction for user registration

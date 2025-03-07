@@ -1,9 +1,5 @@
 {
-
-  "name": "alx-react-app",
-=======
   "name": "form-handling-react",
-fe521ac (Added form handling with controlled components and Formik)
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,15 +10,10 @@ fe521ac (Added form handling with controlled components and Formik)
     "preview": "vite preview"
   },
   "dependencies": {
-
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-=======
     "formik": "^2.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "yup": "^1.6.1"
- fe521ac (Added form handling with controlled components and Formik)
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
