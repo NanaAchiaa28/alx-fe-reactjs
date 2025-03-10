@@ -36,4 +36,7 @@ const RegistrationForm = () => {
 };
 
 export default RegistrationForm;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9b169ea (Initial commit for form handling project)
