@@ -7,62 +7,42 @@ const RegistrationForm = () => {
     password: "",
   });
 
-  const [errors, setErrors] = useState({});
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const validateForm = () => {
-    let newErrors = {};
-    if (!formData.username) newErrors.username = "Username is required";
-    if (!formData.email) newErrors.email = "Email is required";
-    if (!formData.password) newErrors.password = "Password is required";
-    return newErrors;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const validationErrors = validateForm();
-    if (Object.keys(validationErrors).length === 0) {
-      console.log("Form submitted successfully", formData);
-    } else {
-      setErrors(validationErrors);
-    }
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Username:</label>
+    <form>
+      <label>
+        Username:
         <input
           type="text"
           name="username"
-          value={formData.username}
+          value={formData.username}  // Ensure this is present
           onChange={handleChange}
         />
-        {errors.username && <p>{errors.username}</p>}
-      </div>
-      <div>
-        <label>Email:</label>
+      </label>
+
+      <label>
+        Email:
         <input
           type="email"
           name="email"
-          value={formData.email}
+          value={formData.email}  // Ensure this is present
           onChange={handleChange}
         />
-        {errors.email && <p>{errors.email}</p>}
-      </div>
-      <div>
-        <label>Password:</label>
+      </label>
+
+      <label>
+        Password:
         <input
           type="password"
           name="password"
-          value={formData.password}
+          value={formData.password}  // Ensure this is present
           onChange={handleChange}
         />
-        {errors.password && <p>{errors.password}</p>}
-      </div>
+      </label>
+
       <button type="submit">Register</button>
     </form>
   );
