@@ -1,4 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
+import React from "react";
+import { useQuery } from "react-query";
 
 const fetchPosts = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -7,18 +8,14 @@ const fetchPosts = async () => {
 };
 
 const PostsComponent = () => {
-  const { data, error, isLoading, refetch } = useQuery({
-    queryKey: ["posts"],
-    queryFn: fetchPosts,
-  });
+  const { data, error, isError, isLoading } = useQuery("posts", fetchPosts);
 
-  if (isLoading) return <p>Loading posts...</p>;
-  if (error) return <p>Error: {error.message}</p>;
+  if (isLoading) return <p>Loading...</p>;
+  if (isError) return <p>Error: {error.message}</p>;
 
   return (
     <div>
       <h2>Posts</h2>
-      <button onClick={() => refetch()}>Refetch Posts</button>
       <ul>
         {data.map((post) => (
           <li key={post.id}>{post.title}</li>
