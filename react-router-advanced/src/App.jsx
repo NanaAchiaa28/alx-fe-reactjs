@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
-import BlogPost from "./components/BlogPost";
+import BlogPost from "./components/BlogPost";  // Ensure this exists
 import NotFound from "./components/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
-  const isAuthenticated = false; // Change to true for testing
+  const isAuthenticated = false; // Change this to test authentication
 
   return (
     <Router>
@@ -20,7 +20,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="/post/:id" element={<BlogPost />} />
+        <Route path="/blog/:id" element={<BlogPost />} />  {/* FIXED */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
