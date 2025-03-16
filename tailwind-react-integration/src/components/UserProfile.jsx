@@ -2,36 +2,48 @@ import React from "react";
 
 const UserProfile = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 sm:p-4 md:p-8 bg-gray-100 rounded-lg shadow-lg max-w-xs md:max-w-sm mx-auto">
-      {/* Profile Image */}
+    <div className="max-w-sm mx-auto bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+      {/* Profile Image with hover effect */}
       <img
-        src="https://via.placeholder.com/150"
+        src="your-image-url.jpg"
         alt="User"
-        className="rounded-full w-24 h-24 sm:w-24 sm:h-24 md:w-36 md:h-36 mx-auto"
+        className="w-24 h-24 rounded-full mx-auto hover:scale-110 transition-transform duration-300 ease-in-out"
       />
 
-      {/* User Name */}
-      <h2 className="text-lg sm:text-xl md:text-xl font-semibold mt-4">
+      {/* User Name with text emphasis on hover */}
+      <h2 className="mt-4 text-xl font-semibold text-gray-900 text-center hover:text-blue-500 transition-colors duration-300">
         John Doe
       </h2>
 
-      {/* User Bio */}
-      <p className="text-sm sm:text-base md:text-lg text-gray-600 text-center mt-2">
-        Frontend Developer | React Enthusiast | UI/UX Designer
-      </p>
+      {/* User Role */}
+      <p className="text-gray-600 text-center">Software Engineer</p>
 
       {/* Social Links */}
-      <div className="flex space-x-4 mt-4">
-        <a href="#" className="text-blue-500 hover:text-blue-700 text-lg">
-          Twitter
+      <div className="mt-4 flex justify-center space-x-4">
+        <a
+          href="#"
+          className="text-gray-600 hover:text-blue-500 transition-colors duration-300"
+        >
+          <i className="fab fa-twitter text-xl"></i>
         </a>
-        <a href="#" className="text-blue-500 hover:text-blue-700 text-lg">
-          LinkedIn
+        <a
+          href="#"
+          className="text-gray-600 hover:text-blue-500 transition-colors duration-300"
+        >
+          <i className="fab fa-linkedin text-xl"></i>
         </a>
-        <a href="#" className="text-blue-500 hover:text-blue-700 text-lg">
-          GitHub
+        <a
+          href="#"
+          className="text-gray-600 hover:text-blue-500 transition-colors duration-300"
+        >
+          <i className="fab fa-github text-xl"></i>
         </a>
       </div>
+
+      {/* Call to Action Button */}
+      <button className="mt-6 w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors duration-300">
+        Follow
+      </button>
     </div>
   );
 };
