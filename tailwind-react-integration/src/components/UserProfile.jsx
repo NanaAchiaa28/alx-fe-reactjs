@@ -2,7 +2,7 @@ import React from "react";
 
 const UserProfile = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 sm:p-4 md:p-8 bg-gray-100 rounded-lg shadow-lg max-w-sm md:max-w-md mx-auto">
+    <div className="flex flex-col items-center justify-center p-4 sm:p-4 md:p-8 bg-gray-100 rounded-lg shadow-lg max-w-xs md:max-w-sm mx-auto">
       {/* Profile Image */}
       <img
         src="https://via.placeholder.com/150"
@@ -11,7 +11,7 @@ const UserProfile = () => {
       />
 
       {/* User Name */}
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4">
+      <h2 className="text-lg sm:text-xl md:text-xl font-semibold mt-4">
         John Doe
       </h2>
 
