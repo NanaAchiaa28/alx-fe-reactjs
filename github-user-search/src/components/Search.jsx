@@ -5,8 +5,8 @@ const Search = ({ onSearch }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username.trim()) {
-      onSearch(username); // Call the API function in App.jsx
+    if (username.trim() !== "") {
+      onSearch(username);
     }
   };
 
@@ -15,12 +15,12 @@ const Search = ({ onSearch }) => {
       <form onSubmit={handleSubmit} className="mb-4">
         <input
           type="text"
-          placeholder="Enter GitHub username..."
+          placeholder="Enter GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="border rounded p-2 mr-2"
+          className="border p-2 rounded"
         />
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+        <button type="submit" className="ml-2 bg-blue-500 text-white px-4 py-2 rounded">
           Search
         </button>
       </form>
